@@ -21,4 +21,13 @@ async def heh(ctx,count_heh = 5):
 @bot.command()
 async def bye(ctx):
     await ctx.send("\U0001f642")
-    
+
+@bot.command()
+async def emoji(ctx):
+    emodji = ["U+2764 U+FE0F", "U+2615	", "U+1F339", "U+1F31E", "U+1F319"]
+    return random.choice(emodji)
+
+@bot.command()
+async def repeat(ctx, times: int, content='repeating...'):
+    for i in range(times):
+        await ctx.send(content)
