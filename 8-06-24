@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>La Capy Crochetera</title>
+    <link rel ="stylesheet" href = "styles.css">
+</head>
+
+<body>
+    <h1>¡Amigurumis Adorables!</h1>
+    <p>Con el propósito de enseñar la belleza de tejer.</p>
+    <div class = "cuadrado">
+        <h2>Llaveros tejidos:</h2>
+        <ul sytle = "list-styke-position: inside; padding: 0;">
+
+            <li>Capybara: $50 mexicanos</li>
+            <li>Ballenas: $30 mexicanos</li>
+            <li>Pollitos: $40 mexicanos</li>
+            <li>Tlacuache: $55 mexicanos</li>
+
+        </ul>
+    </div>
+    <div class="cuadrado">
+        <iframe src="https://www.meteoblue.com/en/weather/widget/daily/ip_romania_675514?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=light" frameborder="0" scrolling="NO" style="width: 216px; height: 420px"></iframe>
+    </div>
+    <img src="https://http2.mlstatic.com/D_NQ_NP_684722-MLM69894678507_062023-O.webp" alt="Estos son nuestros productos" class = "small-image">
+</body>
+</html>
+
+------------------------------------------------------------------
+body{
+    background-color: rgb(170, 109, 57);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    color: rgb(85, 39, 0);
+    text-align: center;
+    
+}
+.small-image{
+    float: left;
+    margin-left: 5px;
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 5px;
+    border: 5px solid rgb(128, 70, 21);
+}
+
+h1{
+    color: rgb(128, 24, 21);
+    font-size: 55px;
+
+}
+
+.cuadrado{
+    width: auto;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: 2px solid brown;
+}
+
+h1 {
+    animation: degradado 3s infinite;
+}
+
+@keyframes degradado {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: red;
+  } 
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes desplazar {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  } 
+}
+body > *{
+  animation: desplazar 1s ease-out forwards;
+}
